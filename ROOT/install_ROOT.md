@@ -1,8 +1,6 @@
 # Instalación de ROOT 6.18
 
-### Detalles de la instalación de ROOT 6.18
-
-Este proceso de instalación esta dirigido a usuario poco experimentados por lo tanto hace uso en la mayoría de las veces el *gestor de archivos*. En general, para instalar este software solo necesitamos el código fuente y una carpeta ***build*** donde compilar. Se recomienda realizar una instalación ordenada como se muestra en el esquema adjunto (todos los directorios son carpetas).
+Este proceso de instalación recomienda hacer uso del *gestor de archivos* para moverse entre los distintos directorios. Se recomienda realizar una instalación ordenada como se muestra en el esquema adjunto (todos los directorios son carpetas). En general, para instalar este software solo se necesita el código fuente y una carpeta ***build*** donde compilar.
 
 ----
 
