@@ -1,7 +1,3 @@
----
-typora-root-url: ./
----
-
 ![](/src/b2b_0000.png)
 
 # Instalación completa de Geant4 y ROOT
