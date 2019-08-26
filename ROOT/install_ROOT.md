@@ -1,3 +1,9 @@
+---
+typora-root-url: ..
+---
+
+
+
 # Instalación de ROOT 6.18
 
 Este proceso de instalación recomienda hacer uso del *gestor de archivos* para moverse entre los distintos directorios. Se recomienda realizar una instalación ordenada como se muestra en el esquema adjunto (todos los directorios son carpetas). En general, para instalar este software solo se necesita el código fuente y una carpeta ***build*** donde compilar.
@@ -6,50 +12,85 @@ Este proceso de instalación recomienda hacer uso del *gestor de archivos* para 
 
 
 
-![](/images-png/path6565.png)
+![](/ROOT/images/dir_root.png)
 
 ### Pasos a seguir:
 
-1. Descargar los binarios desde la página oficial de [ROOT](https://root.cern.ch/downloading-root) . Seleccionar la última versión estable. 
+1. ACTUALIZAR la distribución de Linux a la versión más reciente:
 
-   [root_v6.18.00.source.tar.gz](https://root.cern/download/root_v6.18.00.source.tar.gz), (158 MB)
+      ```bash
+      $ sudo apt update
+      ```
 
-2. Mover el archivo descargado a nuestro directorio de instalacion ***root-6.18***:
+      ```bash
+      $ sudo apt upgrade
+      ```
 
-3. Descomprimir el archivo comprimido (.tar.gz). 
+2. INSTALAR DEPENDENCIAS
+
+      Los paquetes han sido revisados con la base de paquetes de [Ubuntu](https://packages.ubuntu.com/).
+
+      La lista detallada se puede revisar aquí [ROOT](https://root.cern.ch/build-prerequisites)
+
+      Librerías críticas (sin esto no funciona)
+
+      ```bash
+      sudo apt install git cmake cmake-qt-gui g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev libpng-dev libpng++-dev libjpeg-dev
+      ```
+
+      Librerías importantes
+
+      ```bash
+      sudo apt install gfortran libssl-dev libpcre3-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl23 libgsl-dev
+      ```
+      
+---
+      
+3. Descargar los binarios desde la página oficial de [ROOT](https://root.cern.ch/downloading-root) . Seleccionar la última versión estable (PRO). 
+
+      [root_v6.18.00.source.tar.gz](https://root.cern/download/root_v6.18.00.source.tar.gz), (158 MB)
+
+4. Mover el archivo descargado a nuestro directorio de instalacion ***root-6.18***:
+
+5. Descomprimir el archivo comprimido (.tar.gz). 
 
    Revisar que se haya creado la carpeta: ***root-6.18.00***
 
-4. Crear el directorio *root-build*.
+6. Crear el directorio *root-build*.
 
    Comprobar que todo este de acuerdo al esquema adjunto.
 
-5. Abrir una terminal y cambiar al directorio actual: *root-build*
+7. Abrir una terminal y cambiar al directorio actual: *root-build*
 
    ```bash
    $ cd /home/USUARIO/Documents/ENTORNO/root-6.18/root-build/
    ```
 
-6. Ejecutar `cmake`
+8. Ejecutar `cmake` (Prepara la compilación)
 
    ```bash
    $ camke ../root-6.18.00/
    ```
 
-7. Compilar root
+9. Compilar root
 
-   Sino observas ningun problema, todo está listo para la compilación. Aqui `j4` significa que vamos a compilar usando 4 nucleos del procesador,  depende de la potencia de tu ordenador.  Mientras más núcleos físicos poseas menos tiempo tomará el proceso y viceversa. Con mi ordenador y usando 4 núcleos el proceso tardó: 1h y 30 min.
+   Aquí `j4` significa que se compilará usando 4 nucleos del procesador,  depende de la potencia de tu ordenador.  Mientras más núcleos físicos poseas menos tiempo tomará el proceso y viceversa. 
 
    ```bash
    $ make -j4
    ```
 
-8. Fijar las varibales de entorno
+   En mi caso, usando usando 4 núcleos el proceso tardó: 1h y 30 min.
+
+   ![](/ROOT/images/process_install.jpg)
+
+10. Fijar las varibales de entorno
+
    ```bash
    $ source /bin/thisroot.sh
    ```
 
-9. Ya tenemos instalado ROOT
+11. Ya tenemos instalado ROOT. Ejectutar:
 
    ```bash
    $ root
@@ -60,9 +101,11 @@ Este proceso de instalación recomienda hacer uso del *gestor de archivos* para 
 
 ## ROOT de forma persistente `(source)`
 
-Con el proceso anterior ya se tiene correctamente instalado *ROOT*, sin embargo, el paso 8 se tiene que realizar cada vez que se cierre la terminal, por lo que es mejor fijar *ROOT* de forma persistente. El proceso es el siguiente:
+Con el proceso anterior ya se tiene correctamente instalado *ROOT*, sin embargo, es necesario que fijemos las variables de entorno cada cerremos la terminal. La solución es fijar *ROOT* de forma persistente.
 
-   - Abrir el directorio home: */home/*usuario/
+El proceso es el siguiente:
+
+   - Abrir el directorio home: */home/*USUARIO/
 
    - Presionar `Crtl + H` para ver los archivos ocultos.
 
@@ -74,7 +117,7 @@ Con el proceso anterior ya se tiene correctamente instalado *ROOT*, sin embargo,
 
      ```bash
      # Entorno de Geant4 y ROOT
-     source /home/USUARIO/Documents/Geant4/root-6.18/root-build/bin/thisroot.sh
+     source /home/USUARIO/Documents/MIENTORNO/root-6.18/root-build/bin/thisroot.sh
      ```
 
 - Guardamos, salimos y presionar nuevamente `Crtl + H` para regresar todo a la normalidad.
@@ -87,41 +130,57 @@ Con el proceso anterior ya se tiene correctamente instalado *ROOT*, sin embargo,
 
 
 
+## Resultado
+
+El resultado se muestra a continuación:
+Se sabe que el programa ha sido compilado desde el código fuente se puede ver el mensaje:
+
+```bash
+Built for linuxx8664gcc on Aug 25 2019.
+From tag, 25 June 2019
+```
+
+​    ![](/ROOT/images/root-final.png)
+
+
+
 ## Adicional
 
-### Vincular *ROOT* con *Geant4*. 
+### Vincular *ROOT* con *Geant4* para simulaciones
 
 Esto es especialmente útil cuando se requiere que la simulación llame a ROOT para llenar un histograma directamente, etc.  
 
 El procedimiento es el siguiente:
 
-Movernos a la ruta de instalación de root y crear un archivo nuevo llamado: `root.sh`, así:
+1. Movernos a la ruta de instalación de root y crear un archivo nuevo llamado: `root.sh`, así:
 
    ```bash
-   $ cd /home/user/Documents/ENTORNO/root-6.18/
-   $ touch root.sh
+   $ cd /home/user/Documents/MIENTORNO/root-6.18/
+   $ touch script_root.sh
    ```
 
-10. Abrir el archivo que hemos creado y pegar dentro lo siguiente:
+2. Abrir el archivo que hemos creado y pegar dentro lo siguiente:
 
-    ```bash
-    # Mensaje para mostrar en la terminal
-    echo Root en Geant4 listo!
-    
-    # Para usar ROOT con Geant4 en algunas aplicaciones
-    export G4ROOT_USE=1
-    ```
+   ```bash
+   #Mensaje para mostrar en la terminal
+   echo Root en Geant4 listo!
+   
+   #Para usar ROOT con Geant4 en algunas aplicaciones
+   export G4ROOT_USE=1
+   ```
 
-  
+3. Guardar el archivo y cerrar.
 
-El resultado final es el siguiente:
+4. Hacer un **source** (persistente) del script en `.bashrc` como en el caso anterior.
 
-![](/ROOT/root-final.png)
+   ```bash
+   source /home/user/Documents/MIENTORNO/root-6.18/script_root.sh
+   ```
 
-Cuando root ha sido compilado desde el código fuente se puede ver el mensaje:
+5. Ejecutar root
 
-```bash
-Built for linuxx8664gcc on Aug 25 2019, The ROOT Team
-```
+   ```bash
+   $ root
+   ```
 
-FIN
+   

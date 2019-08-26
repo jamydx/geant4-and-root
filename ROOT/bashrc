@@ -1,4 +1,3 @@
-
-# Entorno de Geant4
+#Entorno para Geant4 y ROOT
 source /home/jonasdx/Documents/Geant4/root-6.18/root/bin/thisroot.sh
-source /home/jonasdx/Documents/Geant4/root-6.18/root.sh
+source /home/jonasdx/Documents/Geant4/root-6.18/script_root.sh
