@@ -39,17 +39,17 @@ Esquema general de directorios de instalación
    Librerías necesarias: Geant4 y ROOT:
 
    ```bash
-   sudo apt install libxerces-c-dev qt5-default mesa-utils mesa-utils-extra mesa-common-dev libfreetype6 libfreetype6-dev libqt4-opengl libqt4-opengl-dev libxmu-dev
+   sudo apt install libxerces-c-dev qt5-default mesa-utils mesa-utils-extra mesa-common-dev \libfreetype6 libfreetype6-dev libqt4-opengl libqt4-opengl-dev libxmu-dev
    ```
 
    ```bash
-   sudo apt install git cmake cmake-qt-gui g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev libpng-dev libpng++-dev libjpeg-dev
+   sudo apt install git cmake cmake-qt-gui g++ gcc binutils libx11-dev libxpm-dev libxft-dev \libxext-dev libpng-dev libpng++-dev libjpeg-dev
    ```
 
    Librerías importantes (opcionales):
 
    ```bash
-   sudo apt install gfortran libssl-dev libpcre3-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl23 libgsl-dev
+   sudo apt install gfortran libssl-dev libpcre3-dev libftgl-dev libmysqlclient-dev \libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl23 libgsl-dev
    ```
 
 ---
@@ -58,7 +58,7 @@ Esquema general de directorios de instalación
 
 Esta distribución hace uso de los paquetes sudo apt install.
 
-[Geant4 para Debian/Ubuntu/Mint](/Geant4/install_geant4)
+[Geant4 para Debian/Ubuntu/Mint](/Geant4/install_geant4.md)
 
 ### Instalación para distribuciones en Arch/Manjaro
 
