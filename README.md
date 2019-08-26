@@ -1,4 +1,4 @@
-![](/home/jonasdx/MEGA/TFM_Jonas/GitHub_G4ROOT/Geant4/b1_0000.png)
+![](Geant4/b2b_0000.png)
 
 # Instalación completa de Geant4 y ROOT
 
@@ -28,7 +28,7 @@ En este repositorio se muestra el proceso detallado sobre la instalación de Gea
 
 ## ROOT 6.18.00
 
-![](/home/jonasdx/MEGA/TFM_Jonas/GitHub_G4ROOT/ROOT/root-gh.png)
+![](/ROOT/root-gh.png)
 
 #### Preparación del sistema
 
