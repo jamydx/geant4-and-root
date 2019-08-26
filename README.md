@@ -1,50 +1,118 @@
-![](Geant4/b2b_0000.png)
+---
+typora-root-url: ./
+---
+
+![](/src/b2b_0000.png)
 
 # Instalación completa de Geant4 y ROOT
 
-En este repositorio se muestra el proceso detallado sobre la instalación de Geant4 y ROOT. Se dirige a usuarios noveles y medios. El proceso se realiza en dos distribuciones (sabores) de linux, estas son:  ***Manjaro*** y ***Linux Mint***. Por lo tanto el proceso que aqui se muestra sirve para un gran abanico de distribuciones, para las basadas en Arch y para las basadas en Debian (Ubuntu, etc.) respectivamente.
-
-## Geant4_p10
-
-### Instalación en Manjaro Linux
-
-#### Preparación del sistema
-
-#### Instalación desde el código fuente
-
-#### Configurar entorno de variables
+En este repositorio se muestra el proceso detallado para realizar una instalación completa e integrada entre Geant4 y ROOT. Se dirige a usuarios noveles y medios. El proceso se realiza exclusivamente para  ***Linux Mint*** . Sin embargo es extrapolable a la siguiente lista de distribuciones:
 
 
+| Apt (base)                                                 | Pacman (base)    |
+| ---------------------------------------------------------- | :--------------- |
+| Debian (stable)<br />Ubuntu (18.04)<br />Linux Mint (18.2) | Manjaro (18.0.4) |
 
-### Instalación en Ubuntu
+Esquema general de directorios de instalación
+
+![](/src/dir_general.png)
+
+
+## Geant4.10.05.p01
 
 #### Preparación del sistema
 
-#### Instalación desde el código fuente
+1. ACTUALIZAR la distribución de Linux a la versión más reciente:
 
-#### Configurar entorno de variables
+   ```bash
+   $ sudo apt update
+   ```
+
+   ```bash
+   $ sudo apt upgrade
+   ```
+
+2. INSTALAR DEPENDENCIAS
+
+   Los paquetes han sido revisados con la base de paquetes de [Ubuntu](https://packages.ubuntu.com/).
+
+   Librerías críticas Geant4 y ROOT:
+
+   ```bash
+   sudo apt install git cmake cmake-qt-gui g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev libpng-dev libpng++-dev libjpeg-dev
+   ```
+
+   ```bash
+   sudo apt install libxerces-c-dev qt5-default mesa-utils mesa-utils-extra mesa-common-dev libfreetype6 libfreetype-dev 
+   ```
+
+   Librerías importantes:
+
+   ```bash
+   sudo apt install gfortran libssl-dev libpcre3-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl23 libgsl-dev
+   ```
+
+---
+
+### Instalación para distribuciones: Debian/Ubuntu/Mint
+
+Esta distribución hace uso de los paquetes sudo apt install.
+
+[Geant4 para Debian/Ubuntu/Mint](/Geant4/install_geant4)
+
+### Instalación para distribuciones en Arch/Manjaro
+
+La instalación para distribuciones Arch es la misma que las basadas en Debían. Se puede buscar los paquetes directamente en el gestor de software que hace un uso muy efectivo de los paquetes.
 
 
 
 ## ROOT 6.18.00
 
-![](/ROOT/root-gh.png)
+|                         |                       |
+| ----------------------- | --------------------- |
+| ![](/src/logo_root.png) | ![](/src/root-gh.png) |
 
 #### Preparación del sistema
 
-En general si se logra instalar Geant4 con éxito, la instalación de ROOT es prácticamente inmediata.
+En general, una vez instalado Geant4, la instalación de ROOT es relativamente sencilla.
 
 #### Instalación desde el código fuente
 
-La instalación de ROOT desde el código fuente es la mejor opción. Compilar tiene las ventajas que el software funcionará con toda la potencia que brinda nuestro ordenador. Es especialmente útil cuando se cuenta con un ordandor potente en el que se desea aprovechar todos los recursos disponibles o por el contrario cuando se quiere optimizar el tiempo de cálculo.
+La instalación de ROOT desde el código fuente es la mejor opción. 
 
-Las instrucciones para realizar esta instalación se muestra aquí: 
-* [Instalar desde codigo fuente](/ROOT/install_ROOT.md)
+**Ventajas e inconvenientes de compilar:**
 
++ El software aprovechará toda la potencia que brinde nuestro ordenador. 
++ Es especialmente útil cuando se cuenta con un ordenador potente en el que se desee aprovechar todos los recursos disponibles.
++ Útil cuando se quiere optimizar el tiempo de cálculo de un ordenador modesto.
++ Es un proceso largo y algo tedioso.
+
+**Instrucciones para realizar esta instalación se muestra a detalle aquí:** 
+
+[Instalar ROOT desde código fuente](/ROOT/install_ROOT.md)
+
+---
 
 #### Instalación pre-compilada
 
-La instalación pre-compilada consiste en una instalación rápida. En esta modalidad el software ha sido compilado en otro ordenador bajo ciertas condiciones (dependencias) que tienen que cumplirse en el ordenador de destino para que se ejecute. Esta modalidad de instalación se recomienda para usuarios recipen llegados a *FreeSoftware* o que no requieran que el software funcione de forma optimizada porque solo interesa explorar o realizar una tarea poco demandante. 
+La instalación pre-compilada consiste en una instalación rápida. El software ha sido compilado en otro ordenador bajo ciertas condiciones (dependencias) que tienen que cumplirse en el ordenador de destino para que se ejecute.
 
-Las instrucciones para realizar esta instalación se muestran aquí: 
-* [Instalar desde pre-compilado]()
+**Ventajas e inconvenientes de usar pre-compilado:**
+
+* Es es una instalación relativamente rápida.
+* Es la mejor opción para usuarios nóveles porque no requiere compilar desde el código fuente.
+* No aprovecha todos los recursos de nuestro ordenador. Solo se nota al realizar análisis de datos de gran complejidad.
+
+**Instrucciones para realizar esta instalación se muestran aquí:** 
+
+[Instalar ROOT desde pre-compilado](/ROOT/pre_ROOT.md)
+
+
+
+---
+
+## Fuentes y Recursos:
+
+* [Geant 4 (Download page and more)](http://geant4.web.cern.ch/)
+* [ROOT Documentation](https://root.cern.ch/documentation)
+
