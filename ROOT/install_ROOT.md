@@ -8,7 +8,7 @@ Este proceso de instalación esta dirigido a usuario poco experimentados por lo 
 
 
 
-![](/home/jonasdx/MEGA/TFM_Jonas/GitHub_G4ROOT/images-png/path6565.png)
+![](/path6565.png)
 
 ### Pasos a seguir:
 
@@ -118,7 +118,7 @@ Movernos a la ruta de instalación de root y crear un archivo nuevo llamado: `ro
 
 El resultado final es el siguiente:
 
-![](/home/jonasdx/MEGA/TFM_Jonas/GitHub_G4ROOT/ROOT/root-final.png)
+![](/root-final.png)
 
 Cuando root ha sido compilado desde el código fuente se puede ver el mensaje:
 
