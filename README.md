@@ -1,20 +1,18 @@
-[TOC]
+![](/home/jonasdx/MEGA/TFM_Jonas/GitHub_G4ROOT/Geant4/b1_0000.png)
 
-# Geant4 and Root for new Users
+# Instalación completa de Geant4 y ROOT
 
-Bienvenido a este repositorio que tiene como finalidad faciltar la instalación de dos programas que se utiliza en física de partículas
+En este repositorio se muestra el proceso detallado sobre la instalación de Geant4 y ROOT. Se dirige a usuarios noveles y medios. El proceso se realiza en dos distribuciones (sabores) de linux, estas son:  ***Manjaro*** y ***Linux Mint***. Por lo tanto el proceso que aqui se muestra sirve para un gran abanico de distribuciones, para las basadas en Arch y para las basadas en Debian (Ubuntu, etc.) respectivamente.
 
-## Geant4
-
-En esta sección vamos a proceder a realizar la instalación en dos sitemas operativos Manjaro Linux y Ubuntu
+## Geant4_p10
 
 ### Instalación en Manjaro Linux
 
 #### Preparación del sistema
 
-#### Instalación misma
+#### Instalación desde el código fuente
 
-#### Configurando entorno de variables
+#### Configurar entorno de variables
 
 
 
@@ -22,20 +20,30 @@ En esta sección vamos a proceder a realizar la instalación en dos sitemas oper
 
 #### Preparación del sistema
 
+#### Instalación desde el código fuente
 
-
-#### Instalación misma
-
-
-
-#### Configurando entorno de variables
+#### Configurar entorno de variables
 
 
 
-## ROOT 6.xx
+## ROOT 6.18.00
+
+![](/home/jonasdx/MEGA/TFM_Jonas/GitHub_G4ROOT/ROOT/root-gh.png)
 
 #### Preparación del sistema
 
-#### Instalación misma
+En general si se logra instalar Geant4 con éxito, la instalación de ROOT es prácticamente inmediata.
 
-#### Configurando entorno de variables
+#### Instalación desde el código fuente
+
+La instalación de ROOT desde el código fuente es la mejor opción. Compilar tiene las ventajas que el software funcionará con toda la potencia que brinda nuestro ordenador. Es especialmente útil cuando se cuenta con un ordandor potente en el que se desea aprovechar todos los recursos disponibles o por el contrario cuando se quiere optimizar el tiempo de cálculo.
+
+Las instrucciones para realizar esta instalación se muestra aquí: 
+
+
+
+#### Instalación pre-compilada
+
+La instalación pre-compilada consiste en una instalación rápida. En esta modalidad el software ha sido compilado en otro ordenador bajo ciertas condiciones (dependencias) que tienen que cumplirse en el ordenador de destino para que se ejecute. Esta modalidad de instalación se recomienda para usuarios recipen llegados a *FreeSoftware* o que no requieran que el software funcione de forma optimizada porque solo interesa explorar o realizar una tarea poco demandante. 
+
+Las instrucciones para realizar esta instalación se muestran aquí: 
