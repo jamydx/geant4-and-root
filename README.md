@@ -39,7 +39,7 @@ En general si se logra instalar Geant4 con éxito, la instalación de ROOT es pr
 La instalación de ROOT desde el código fuente es la mejor opción. Compilar tiene las ventajas que el software funcionará con toda la potencia que brinda nuestro ordenador. Es especialmente útil cuando se cuenta con un ordandor potente en el que se desea aprovechar todos los recursos disponibles o por el contrario cuando se quiere optimizar el tiempo de cálculo.
 
 Las instrucciones para realizar esta instalación se muestra aquí: 
-
+* [Instalar desde codigo fuente](/ROOT/install_ROOT.md)
 
 
 #### Instalación pre-compilada
@@ -47,3 +47,4 @@ Las instrucciones para realizar esta instalación se muestra aquí:
 La instalación pre-compilada consiste en una instalación rápida. En esta modalidad el software ha sido compilado en otro ordenador bajo ciertas condiciones (dependencias) que tienen que cumplirse en el ordenador de destino para que se ejecute. Esta modalidad de instalación se recomienda para usuarios recipen llegados a *FreeSoftware* o que no requieran que el software funcione de forma optimizada porque solo interesa explorar o realizar una tarea poco demandante. 
 
 Las instrucciones para realizar esta instalación se muestran aquí: 
+* [Instalar desde pre-compilado]()
