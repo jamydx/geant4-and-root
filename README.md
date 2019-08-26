@@ -1,3 +1,7 @@
+---
+typora-root-url: ./
+---
+
 ![](/src/b2b_0000.png)
 
 # Instalación completa de Geant4 y ROOT
@@ -32,17 +36,17 @@ Esquema general de directorios de instalación
 
    Los paquetes han sido revisados con la base de paquetes de [Ubuntu](https://packages.ubuntu.com/).
 
-   Librerías críticas Geant4 y ROOT:
+   Librerías necesarias: Geant4 y ROOT:
+
+   ```bash
+   sudo apt install libxerces-c-dev qt5-default mesa-utils mesa-utils-extra mesa-common-dev libfreetype6 libfreetype6-dev libqt4-opengl libqt4-opengl-dev libxmu-dev
+   ```
 
    ```bash
    sudo apt install git cmake cmake-qt-gui g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev libpng-dev libpng++-dev libjpeg-dev
    ```
 
-   ```bash
-   sudo apt install libxerces-c-dev qt5-default mesa-utils mesa-utils-extra mesa-common-dev libfreetype6 libfreetype-dev 
-   ```
-
-   Librerías importantes:
+   Librerías importantes (opcionales):
 
    ```bash
    sudo apt install gfortran libssl-dev libpcre3-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl23 libgsl-dev
@@ -101,7 +105,7 @@ La instalación pre-compilada consiste en una instalación rápida. El software 
 
 **Instrucciones para realizar esta instalación se muestran aquí:** 
 
-[Instalar ROOT desde pre-compilado](/ROOT/pre_ROOT.md)
+[Instalar ROOT desde pre-compilado](/ROOT/binary_ROOT.md)
 
 
 
