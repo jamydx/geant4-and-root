@@ -1,0 +1,4 @@
+
+# Entorno de Geant4
+source /home/jonasdx/Documents/Geant4/root-6.18/root/bin/thisroot.sh
+source /home/jonasdx/Documents/Geant4/root-6.18/root.sh
