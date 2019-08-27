@@ -6,7 +6,7 @@ Este proceso de instalación recomienda utilizar el *gestor de archivos* para mo
 
 
 
-![](images/dir_root.png)
+![](./images/dir_root.png)
 
 ## Pasos a seguir:
 
@@ -139,7 +139,7 @@ Built for linuxx8664gcc on Aug 25 2019.
 From tag, 25 June 2019
 ```
 
-​    ![](images/root-final.png)
+​    ![](./images/root-final.png)
 
 
 

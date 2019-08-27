@@ -1,12 +1,12 @@
 # Instalación pre-compilada de ROOT 6.18
 
-Este proceso de instalación se recomienda para usuarios noveles o siempre que no se desee hacer un uso intensivo de ROOT. Para otros fines es mejor utilizar el proceso de [compilación](/ROOT/install_ROOT.md).
+Este proceso de instalación se recomienda para usuarios noveles o siempre que no se desee hacer un uso intenso de ROOT. Para otros fines es mejor utilizar el proceso de [compilación](/ROOT/install_ROOT.md).
 
 ------
 
 
 
-![](images/dir_binary.png)
+![](./images/dir_binary.png)
 
 ## Pasos a seguir:
 
@@ -122,7 +122,7 @@ Build for linuxx8664gcc on Jun 25 2019, 09:22:23
 From tags/v6-18-00@v6-18-00
 ```
 
-![](images/binary_root.png)
+![](./images/binary_root.png)
 
 
 

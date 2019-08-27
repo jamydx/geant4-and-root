@@ -4,7 +4,7 @@
 
 La instalación final seguirá el siguiente esquema de directorios:
 
-![](images/dir_geant4.png)
+![](./images/dir_geant4.png)
 
 
 
@@ -91,11 +91,11 @@ La instalación final seguirá el siguiente esquema de directorios:
 
 13. Clic en ***Generate*** y cerrar cmake.
 
-    | cmake                   | cmake + características |
-    | ----------------------- | ----------------------- |
-    | ![](images/cmake01.png) | ![](images/cmake02.png) |
+    |         Cmake-gui         |  Activar Características  |
+    | :-----------------------: | :-----------------------: |
+    | ![](./images/cmake01.png) | ![](./images/cmake02.png) |
 
-14. Abrir una terminal en el directorio g4_build
+14. Abrir una terminal en el directorio de compilación (*g4_build*)
 
     ```bash
     $ cd /home/USUARIO/Documents/SIMULAR/Geant4-10.05/g4_build/
@@ -109,7 +109,7 @@ La instalación final seguirá el siguiente esquema de directorios:
 
     Aquí `j4` indica el número de núcleos que asignaremos a la tarea. A mayor cantidad de núcleos menor tiempo en realizar la tarea y viceversa. Depende de tu ordenador. Este proceso puede tomar 2 horas o más.
 
-    ![](images/compile_g4.png)
+    ![](./images/compile_g4.png)
 
     
 

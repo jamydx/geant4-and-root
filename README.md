@@ -1,12 +1,10 @@
 ---
-typora-root-url: ./
 By Jonathan M
 ---
 
-
-![](/Geant4/images/b2b_0000.png)
-
 # Instalación completa de Geant4 y ROOT
+
+![](./src/b2b_0000.png)
 
 En este repositorio se muestra el proceso detallado para realizar una instalación completa e integrada entre Geant4 y ROOT. Se dirige a usuarios noveles y medios. El proceso funciona para las siguientes distribuciones basadas en *apt* y en *pacman*.
 
@@ -31,7 +29,7 @@ En este repositorio se muestra el proceso detallado para realizar una instalaci�
 El esquema final de la instalación será el siguiente:
 
 
-![](/src/dir_general.png)
+![](./src/dir_general.png)
 
 
 
@@ -94,9 +92,9 @@ Geant4 es un "toolkit" (caja de herramientas) para la simulación del paso de pa
 ## ROOT 6.18.00
 ---
 
-| Logo ROOT               | Imagen .demo de ROOT  |
-| ----------------------- | --------------------- |
-| ![](/src/logo_root.png) | ![](/src/root-gh.png) |
+| Logo ROOT                | Imagen .demo de ROOT   |
+| ------------------------ | ---------------------- |
+| ![](./src/logo_root.png) | ![](./src/root-gh.png) |
 
 ### Preparación del sistema
 
@@ -119,7 +117,7 @@ En general, una vez instalado Geant4, la instalación de ROOT es relativamente s
 
 ### [Instalación desde el código fuente](/ROOT/install_ROOT.md) 
 
-La instalación de ROOT desde el código fuente es tradicionalmente la mejor opción. 
+La instalación de ROOT desde el código fuente es clásicamente la mejor opción. 
 
 **Ventajas e inconvenientes de compilar:**
 
