@@ -36,21 +36,23 @@ Este proceso de instalación se recomienda para usuarios noveles o siempre que n
 	$ sudo apt install git libssl-dev libpcre3-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl23 libgsl-dev
    ```
    
-   
-   
 3. Descargar los binarios compilados ***(Binary distributions)*** desde la página oficial de [ROOT](https://root.cern.ch/downloading-root) . Seleccionar la versión que mejor se adecue a su distribución de Linux. En el caso de las listadas al inicio, la versión que mejor ajusta las dependencias es:
 
-   | Plataforma       | Paquete                                                      |
-| ---------------- | ------------------------------------------------------------ |
    | Ubuntu 18 gcc7.4 | [root_v6.18.02.Linux-ubuntu18-x86_64-gcc7.4.tar.gz](https://root.cern/download/root_v6.18.02.Linux-ubuntu18-x86_64-gcc7.4.tar.gz) |
+| ---------------- | ------------------------------------------------------------ |
+   | Plataforma       | Paquete                                                      |
    
-4. Mover el archivo descargado a nuestro directorio de instalación ***root-6.18***:
+4. Mover el archivo descargado al directorio de instalación:
 
-5. Descomprimir el archivo comprimido (.tar.gz). 
+   ```bash
+   /home/USUARIO/Documents/MIENTORNO/root-6.18/
+   ```
 
-   Revisar que se haya creado la carpeta: ***root***
+5. Descomprimir el archivo .tar.gz para obtener una carpeta llamada: *root*. ¡Renombrar! ese directorio a ***root-6.18.00*** (para evitar problemas con los ficheros de Ubuntu)
 
-6. ¡Renombrar! el directorio ***root*** a ***root-6.18.00*** (para evitar problemas con los ficheros de Ubuntu). Listar los archivos del directorio actual.
+   * renombrar: *root --- a ---> root-6.18.00*
+
+6. Listar los archivos del directorio actual.
 
    ```bash
    $ ls 
@@ -81,13 +83,17 @@ Con el proceso anterior ya se tiene correctamente instalado *ROOT*, sin embargo,
 
 El proceso es el siguiente:
 
-- Abrir el directorio home: */home/*USUARIO/
+- Abrir el explorador de archivos en la siguiente ruta:
+
+  ```
+  /home/Usuario/
+  ```
 
 - Presionar `Crtl + H` para ver los archivos ocultos.
 
 - Localizar el archivo `.bashrc`
 
-- Abrir `.bashrc` con un editor de texto, ir al final del todo y pegar lo siguiente:
+- Abrir `.bashrc` con un editor de texto. Al final del todo y pegar lo siguiente:
 
   (Cambia USUARIO por el tuyo)
 

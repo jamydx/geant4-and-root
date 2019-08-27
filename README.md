@@ -107,10 +107,10 @@ En general, una vez instalado Geant4, la instalación de ROOT es relativamente s
 * Instalar dependencias
 
   ```bash
-  $ sudo apt install git cmake cmake-qt-gui g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev libpng-dev libpng++-dev libjpeg-dev gfortran
+  $ sudo apt install cmake cmake-qt-gui g++ gcc gfortran binutils libx11-dev libxpm-dev libxft-dev libxext-dev libpng-dev libpng++-dev libjpeg-dev
   ```
 
-* Proceder a la instalación del software eligiendo una de las dos formas:
+* Proceder a la instalación eligiendo una de las dos formas:
 
   * Desde el código fuente
   * Desde paquete pre-compilado

@@ -22,35 +22,39 @@ Este proceso de instalación recomienda utilizar el *gestor de archivos* para mo
 
 2. INSTALAR DEPENDENCIAS
 
-      La lista detallada se puede revisar aquí [ROOT](https://root.cern.ch/build-prerequisites). Los paquetes han sido cuidadosamente revisados de acuerdo a base de datos de paquetes de [Ubuntu/bionic](https://packages.ubuntu.com/)
+    La lista detallada se puede revisar aquí [ROOT](https://root.cern.ch/build-prerequisites). Los paquetes han sido cuidadosamente revisados de acuerdo a base de datos de paquetes de [Ubuntu/bionic](https://packages.ubuntu.com/)
 
-      **Librerías críticas (sin esto no funciona)**
+   **Librerías necesarias (sin esto no funciona)**
 
-      ```bash
-sudo apt install cmake cmake-qt-gui g++ gcc gfortran binutils libx11-dev libxpm-dev libxft-dev libxext-dev libpng-dev libpng++-dev libjpeg-dev
-      ```
-      
-      Librerías importantes (opcionales)
+   ```bash
+	$ sudo apt install cmake cmake-qt-gui g++ gcc gfortran binutils libx11-dev libxpm-dev libxft-dev libxext-dev libpng-dev libpng++-dev libjpeg-dev
+   ```
+   
+   Librerías importantes (opcionales)
 
-      ```bash
-sudo apt install git libssl-dev libpcre3-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl23 libgsl-dev
-      ```
-      
+   ```bash
+	$ sudo apt install git libssl-dev libpcre3-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl23 libgsl-dev
+   ```
+   
 ---
 
-3. Descargar los binarios desde la página oficial de [ROOT](https://root.cern.ch/downloading-root) . Seleccionar la última versión estable (PRO). 
+3. **Descargar** los binarios desde la página oficial de [ROOT](https://root.cern.ch/downloading-root) . Seleccionar la última versión estable (PRO). 
 
       [root_v6.18.00.source.tar.gz](https://root.cern/download/root_v6.18.00.source.tar.gz), (158 MB)
 
-4. Mover el archivo descargado a nuestro directorio de instalación ***root-6.18***:
+4. **Mover** el archivo descargado al directorio de instalación:
 
-5. Descomprimir el archivo comprimido (.tar.gz). 
+      ```bash
+      /home/USUARIO/Documents/MIENTORNO/root-6.18/
+      ```
 
-   Revisar que se haya creado la carpeta: ***root-6.18.00***
+5. **Descomprimir** el archivo *.tar.gz* para obtener una carpeta llamada: *root*. ¡Renombrar! ese directorio a ***root-6.18.00*** (para evitar problemas con los ficheros de Ubuntu)
+
+   - renombrar: *root --- a ---> root-6.18.00*
 
 6. Crear el directorio ***root-build***.
 
-   Comprobar que todo este de acuerdo al esquema adjunto.
+   >  Comprobar que los directorios esten de acuerdo al esquema.
 
 7. Abrir una terminal y cambiar al directorio actual: ***root-build***
 
