@@ -54,7 +54,7 @@ Este proceso de instalación recomienda utilizar el *gestor de archivos* para mo
 
 6. Crear el directorio ***root-build***.
 
-   >  Comprobar que los directorios esten de acuerdo al esquema.
+   >  Comprobar que los directorios sigan el esquema de instalación.
 
 7. Abrir una terminal y cambiar al directorio actual: ***root-build***
 
@@ -78,7 +78,7 @@ Este proceso de instalación recomienda utilizar el *gestor de archivos* para mo
 
    En mi caso, usando usando 4 núcleos el proceso tardó: 1h y 30 min.
 
-   ![](images/process_install.jpg)
+   ![](./images/compile_root.png)
 
 10. Fijar las variables de entorno
 

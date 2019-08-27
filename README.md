@@ -1,4 +1,5 @@
 ---
+typora-root-url: ./
 By Jonathan M
 ---
 
