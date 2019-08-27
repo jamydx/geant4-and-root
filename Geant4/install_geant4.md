@@ -18,7 +18,7 @@
 
 4. Prestar atención al esquema de instalación.
 
-   Puedes cambiar libremente el nombre del directorio base, aqui: **SIMULAR**
+   Puedes cambiar libremente el nombre del directorio base, aquí: **SIMULAR**
 
 5. **Mover** la carpeta **g4_source** a la ruta de instalación: ***/home/USUARIO/SIMULAR/Geant4-10.05/***
 
@@ -76,7 +76,7 @@
 
 12. Clic en ***Configure*** dos veces si fuera necesario (no se debe ver marcadores rojos)
 
-13. Clic en ***Generate*** y cerrar `cmake`.
+13. Clic en ***Generate*** y cerrar cmake.
 
     | cmake                   | cmake + características |
     | ----------------------- | ----------------------- |

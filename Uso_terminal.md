@@ -23,8 +23,12 @@ Estos son los comandos básicos para iniciar en Linux. Para probarlos inicia una
 En general para este proceso de instalación se prefiere utilizar el *gestor de archivos* sobre los comandos de terminal, sin embargo,  eventualmente tendremos que utilizarlos.
 
 1. Crear un Nuevo Directorio o carpeta: `mkdir nueva_carpeta`
-2. Copiar  un archivo o un directorio: `cp FUENTE DIRECTORIO`
-3. Mover un archivo o un directorio: `mv FUENTE DIRECTORIO`
+
+   ```bash
+   $ mkdir nueva_carpeta
+   ```
+
+   
 
 ## Comandos para utilizar el superusuario
 
@@ -34,7 +38,7 @@ Cambiar a superusuario nos permite realizar acciones que normalmente no son perm
 
    ```bash
    $ sudo comando_a_ejecutar
-   --> [sudo] password for your_user: 
+   [sudo] password for your_user: 
    ```
 
    ```bash
@@ -44,11 +48,11 @@ Cambiar a superusuario nos permite realizar acciones que normalmente no son perm
 
    
 
-2. Cambiar a **superusuario** (root) no confundir con el programa que vamos a instalar. Se recomienda discreción al cambiar a modo superusuario porque tenemos luz verde para borrar archivos, mover, etc. que podría romper el sistema sino se sabe lo que se hace. Notese que `$`, cambia a `#`
+2. Cambiar a **superusuario** (root) no confundir con el programa que vamos a instalar. Se recomienda discreción al cambiar a modo superusuario porque tenemos luz verde para borrar archivos, mover, etc. que podría romper el sistema sino se sabe lo que se hace. Note que `$`, cambia a `#`
 
    ```bash
    $ sudo su
-   --> [sudo] password for your_user: 
+   [sudo] password for your_user: 
    ```
 
    ```bash
