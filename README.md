@@ -1,6 +1,3 @@
----
-typora-root-url: ./
----
 
 ![](/Geant4/images/b2b_0000.png)
 
@@ -78,6 +75,7 @@ La instalación en distribuciones Arch es la misma que las basadas en Debían. L
 
 
 
+
 ## ROOT 6.18.00
 
 | Logo ROOT               | Imagen demo de ROOT   |
@@ -101,7 +99,7 @@ En general, una vez instalado Geant4, la instalación de ROOT es relativamente s
   * Desde el código fuente
   * Desde paquete pre-compilado
 
-***
+---
 
 #### Instalación desde el código fuente
 
