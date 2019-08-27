@@ -38,9 +38,10 @@ Este proceso de instalación se recomienda para usuarios noveles o siempre que n
    
 3. Descargar los binarios compilados ***(Binary distributions)*** desde la página oficial de [ROOT](https://root.cern.ch/downloading-root) . Seleccionar la versión que mejor se adecue a su distribución de Linux. En el caso de las listadas al inicio, la versión que mejor ajusta las dependencias es:
 
-   | Ubuntu 18 gcc7.4 | [root_v6.18.02.Linux-ubuntu18-x86_64-gcc7.4.tar.gz](https://root.cern/download/root_v6.18.02.Linux-ubuntu18-x86_64-gcc7.4.tar.gz) |
-| ---------------- | ------------------------------------------------------------ |
-   | Plataforma       | Paquete                                                      |
+   
+   | Plataforma       | Paquete   |
+   | ---------------- | --------- |
+   | Ubuntu_18_gcc7.4 | [root_v6.18.02.Linux-ubuntu18-x86_64-gcc7.4.tar.gz](https://root.cern/download/root_v6.18.02.Linux-ubuntu18-x86_64-gcc7.4.tar.gz) |
    
 4. Mover el archivo descargado al directorio de instalación:
 
@@ -85,7 +86,7 @@ El proceso es el siguiente:
 
 - Abrir el explorador de archivos en la siguiente ruta:
 
-  ```
+  ```bash
   /home/Usuario/
   ```
 

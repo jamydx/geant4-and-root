@@ -101,7 +101,11 @@ Con el proceso anterior ya se tiene correctamente instalado *ROOT*, sin embargo,
 
 El proceso es el siguiente:
 
-   - Abrir el directorio home: */home/*USUARIO/
+   - Abrir el explorador de archivos en la siguiente ruta:
+
+     ```bash
+     /home/Usuario/
+     ```
 
    - Presionar `Crtl + H` para ver los archivos ocultos.
 

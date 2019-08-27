@@ -141,7 +141,11 @@ La instalación final seguirá el siguiente esquema de directorios:
 
 El proceso es el siguiente:
 
-- Abrir el directorio home: */home/*USUARIO/
+- Abrir el explorador de archivos en la siguiente ruta:
+
+  ```bash
+  /home/Usuario/
+  ```
 
 - Presionar `Crtl + H` para ver los archivos ocultos.
 
