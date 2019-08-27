@@ -1,6 +1,6 @@
 # Instalación de ROOT 6.18
 
-Este proceso de instalación recomienda hacer uso del *gestor de archivos* para moverse entre los distintos directorios. Se recomienda realizar una instalación ordenada como se muestra en el esquema adjunto (todos los directorios son carpetas). En general, para instalar este software solo se necesita el código fuente y una carpeta ***build*** donde compilar.
+Este proceso de instalación recomienda utilizar el *gestor de archivos* para moverse entre los distintos directorios. La instalación se realiza según el esquema que se muestra en el esquema (todos los directorios son carpetas). 
 
 ----
 
@@ -8,7 +8,7 @@ Este proceso de instalación recomienda hacer uso del *gestor de archivos* para 
 
 ![](images/dir_root.png)
 
-### Pasos a seguir:
+## Pasos a seguir:
 
 1. ACTUALIZAR la distribución de Linux a la versión más reciente:
 
@@ -22,20 +22,18 @@ Este proceso de instalación recomienda hacer uso del *gestor de archivos* para 
 
 2. INSTALAR DEPENDENCIAS
 
-      Los paquetes han sido revisados con la base de paquetes de [Ubuntu](https://packages.ubuntu.com/).
+      La lista detallada se puede revisar aquí [ROOT](https://root.cern.ch/build-prerequisites). Los paquetes han sido cuidadosamente revisados de acuerdo a base de datos de paquetes de [Ubuntu/bionic](https://packages.ubuntu.com/)
 
-      La lista detallada se puede revisar aquí [ROOT](https://root.cern.ch/build-prerequisites)
-
-      Librerías críticas (sin esto no funciona)
+      **Librerías críticas (sin esto no funciona)**
 
       ```bash
-      sudo apt install git cmake cmake-qt-gui g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev libpng-dev libpng++-dev libjpeg-dev gfortran
+sudo apt install cmake cmake-qt-gui g++ gcc gfortran binutils libx11-dev libxpm-dev libxft-dev libxext-dev libpng-dev libpng++-dev libjpeg-dev
       ```
-
+      
       Librerías importantes (opcionales)
 
       ```bash
-      sudo apt install libssl-dev libpcre3-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl23 libgsl-dev
+sudo apt install git libssl-dev libpcre3-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl23 libgsl-dev
       ```
       
 ---
@@ -126,8 +124,7 @@ El proceso es el siguiente:
 
 ## Resultado
 
-El resultado se muestra a continuación:
-Se sabe que el programa ha sido compilado desde el código fuente se puede ver el mensaje:
+Se sabe que el programa ha sido compilado desde el código fuente, por el tag:
 
 ```bash
 Built for linuxx8664gcc on Aug 25 2019.
@@ -177,4 +174,10 @@ El procedimiento es el siguiente:
    $ root
    ```
 
-   
+
+
+
+# Recursos:
+
+- [Dependencias Root](https://root.cern.ch/build-prerequisites)
+- [Paquetes Ubuntu](https://packages.ubuntu.com/)

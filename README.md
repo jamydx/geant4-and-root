@@ -1,5 +1,6 @@
 ---
 typora-root-url: ./
+By Jonathan M
 ---
 
 
@@ -7,9 +8,9 @@ typora-root-url: ./
 
 # Instalación completa de Geant4 y ROOT
 
-En este repositorio se muestra el proceso detallado para realizar una instalación completa e integrada entre Geant4 y ROOT. Se dirige a usuarios noveles y medios. El proceso funciona para las siguientes distribuciones basadas en *apt* o en *pacman*.
+En este repositorio se muestra el proceso detallado para realizar una instalación completa e integrada entre Geant4 y ROOT. Se dirige a usuarios noveles y medios. El proceso funciona para las siguientes distribuciones basadas en *apt* y en *pacman*.
 
-* **Debian (10), Debian (10) Linux Mint (18.2)**
+* **Debian (10), Ubuntu (18.04) Linux Mint (19.2)**
 
   Estas distribuciones hacen uso de `apt` para gestionar los paquetes. Para instalar un paquete nuevo el comando es el siguiente: 
 
@@ -81,9 +82,11 @@ Geant4 es un "toolkit" (caja de herramientas) para la simulación del paso de pa
 
 * **Distribuciones Arch/Manjaro**
 
-  El proceso de instalación de geant4 en distribuciones *Arch* es esencialmente la misma que las basadas en *Debian*. La única diferencia consiste en buscar los paquetes para `pacman` (generalmente estas distros ya traen la mayoría de esos paquetes instalados). Para realizar la búsqueda de los paquetes se recomienda utilizar el *gestor de software* propio de esas distribuciones **pamac** u **octopi** que hacen una gestión excelente. Los comandos para fijar variables de entorno y para ejecutar los programas es exactamente igual. Nota.- (pacman = terminal, pamac = interfaz gráfica de pacman).
+  Las distribuciones Arch Linux se caracterizan por estar a la vanguardia del software, esto puede suponer ventajas o desventajas según el uso al que estén destinadas. El proceso de instalación de geant4 en estas plataformas es esencialmente el mismo que para *Debian* y derivadas. La única diferencia consiste en buscar los paquetes para `pacman`. Para realizar la búsqueda de los paquetes se recomienda utilizar el *gestor de software* propio de esas distribuciones **pamac** u **octopi**. Los comandos para fijar variables de entorno y demás son exactamente iguales. 
 
-  Los paquetes también se puede buscar directamente en página oficial de Arch
+  Nota.- (pacman = terminal, pamac = interfaz gráfica de pacman).
+
+  Se puede comprobar los paquetes directamente en página oficial de Arch.
 
   * https://www.archlinux.org/packages/
 
@@ -120,9 +123,9 @@ La instalación de ROOT desde el código fuente es tradicionalmente la mejor opc
 
 **Ventajas e inconvenientes de compilar:**
 
-+ El software aprovechará toda la potencia que brinde nuestro ordenador. 
-+ Es especialmente útil cuando se cuenta con un ordenador potente en el que se desee aprovechar todos los recursos disponibles.
-+ Útil cuando se quiere optimizar el tiempo de cálculo de un ordenador modesto.
++ El software aprovechará toda la potencia que brinde el ordenador. 
++ Es especialmente útil cuando se cuenta con un ordenador con muchos núcleos e hilos de ejecución.
++ Útil cuando se quiere que el software se comporte de forma optimizada en ordenadores modestos.
 + Es un proceso largo y algo tedioso.
 
 
@@ -135,7 +138,7 @@ La instalación pre-compilada consiste en una instalación rápida. En esta moda
 
 * Es es una instalación relativamente rápida.
 * Es la mejor opción para usuarios nóveles porque no requiere compilar desde el código fuente.
-* No aprovecha todos los recursos de nuestro ordenador. Solo se nota al realizar análisis de datos de gran complejidad.
+* Si contamos con un ordenador potente en número de núcleos e hilos no se aprovecha todos los recursos. Solo se nota al realizar análisis de datos de gran complejidad.
 
 
 
@@ -143,6 +146,8 @@ La instalación pre-compilada consiste en una instalación rápida. En esta moda
 
 # Fuentes y Recursos:
 
-* [Geant 4 (Download page and more)](http://geant4.web.cern.ch/)
+* [Página oficial Geant 4](http://geant4.web.cern.ch/)
+* [Guía de instalación oficial de Geant4](https://indico.cern.ch/event/679723/contributions/2792554/attachments/1559217/2453759/Geant4InstallationGuide.pdf)
+* [Página oficial de ROOT](https://root.cern.ch/)
 * [ROOT Documentation](https://root.cern.ch/documentation)
 

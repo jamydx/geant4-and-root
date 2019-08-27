@@ -1,8 +1,6 @@
 # Instalación pre-compilada de ROOT 6.18
 
-Este proceso de instalación se recomienda para usuarios noveles o siempre que no se desee hacer un uso extendido de ROOT. Para otros fines es mejor utilizar el proceso de [compilación](/ROOT/install_ROOT.md).
-
-Se requiere que el ordenador tenga instalado todos las dependencias.
+Este proceso de instalación se recomienda para usuarios noveles o siempre que no se desee hacer un uso intensivo de ROOT. Para otros fines es mejor utilizar el proceso de [compilación](/ROOT/install_ROOT.md).
 
 ------
 
@@ -10,7 +8,7 @@ Se requiere que el ordenador tenga instalado todos las dependencias.
 
 ![](images/dir_binary.png)
 
-### Pasos a seguir:
+## Pasos a seguir:
 
 1. ACTUALIZAR la distribución de Linux a la versión más reciente:
 
@@ -24,37 +22,35 @@ Se requiere que el ordenador tenga instalado todos las dependencias.
 
 2. INSTALAR DEPENDENCIAS
 
-   Los paquetes han sido revisados con la base de paquetes de [Ubuntu](https://packages.ubuntu.com/). La lista detallada se puede revisar aquí [ROOT](https://root.cern.ch/build-prerequisites)
+   La lista detallada se puede revisar aquí [ROOT](https://root.cern.ch/build-prerequisites). Los paquetes han sido cuidadosamente revisados de acuerdo a base de datos de paquetes de [Ubuntu/bionic](https://packages.ubuntu.com/).
 
-   Librerías necesarias (sin esto no funciona)
-
-   ```bash
-	$ sudo apt install git cmake cmake-qt-gui g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev libpng-dev libpng++-dev libjpeg-dev gfortran
-   ```
-   
-   Librerías importantes
+   **Librerías necesarias (sin esto no funciona)**
 
    ```bash
-	$ sudo apt install libssl-dev libpcre3-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl23 libgsl-dev
+	$ sudo apt install cmake cmake-qt-gui g++ gcc gfortran binutils libx11-dev libxpm-dev libxft-dev libxext-dev libpng-dev libpng++-dev libjpeg-dev
+   ```
+   
+   Librerías importantes (opcionales)
+
+   ```bash
+	$ sudo apt install git libssl-dev libpcre3-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl23 libgsl-dev
    ```
    
    
    
-3. Descargar los binarios compilados ***(Binary distributions)*** de desde la página oficial de [ROOT](https://root.cern.ch/downloading-root) . Seleccionar la versión que mejor se adecue a nuestra distribución de Linux.
-
-   En el caso de las distribuciones listadas al inicio la versión que mejor se ajusta es:
+3. Descargar los binarios compilados ***(Binary distributions)*** desde la página oficial de [ROOT](https://root.cern.ch/downloading-root) . Seleccionar la versión que mejor se adecue a su distribución de Linux. En el caso de las listadas al inicio, la versión que mejor ajusta las dependencias es:
 
    | Plataforma       | Paquete                                                      |
-   | ---------------- | ------------------------------------------------------------ |
+| ---------------- | ------------------------------------------------------------ |
    | Ubuntu 18 gcc7.4 | [root_v6.18.02.Linux-ubuntu18-x86_64-gcc7.4.tar.gz](https://root.cern/download/root_v6.18.02.Linux-ubuntu18-x86_64-gcc7.4.tar.gz) |
-
+   
 4. Mover el archivo descargado a nuestro directorio de instalación ***root-6.18***:
 
 5. Descomprimir el archivo comprimido (.tar.gz). 
 
    Revisar que se haya creado la carpeta: ***root***
 
-6. ¡Renombrar! el directorio ***root*** a ***root-6.18.00*** (para evitar problemas con los ficheros de Ubuntu) y listar los archivos del directorio actual.
+6. ¡Renombrar! el directorio ***root*** a ***root-6.18.00*** (para evitar problemas con los ficheros de Ubuntu). Listar los archivos del directorio actual.
 
    ```bash
    $ ls 
@@ -110,9 +106,9 @@ El proceso es el siguiente:
 
 ---
 
-El resultado se muestra a continuación:
+## Resultado
 
-Se sabe que el programa ha sido compilado externamente por el mensaje:
+Se sabe que el programa ha sido compilado externamente por el tag:
 
 ```bash
 Build for linuxx8664gcc on Jun 25 2019, 09:22:23
@@ -123,7 +119,7 @@ From tags/v6-18-00@v6-18-00
 
 
 
-# Fuente
+# Recursos:
 
 * [Dependencias Root](https://root.cern.ch/build-prerequisites)
 * [Paquetes Ubuntu](https://packages.ubuntu.com/)

@@ -1,16 +1,20 @@
-# Instalación de Geant4-10.05.p01
+# Instalación de Geant4 10.05.p01
 
 ## Instalación desde el código fuente
 
+La instalación final seguirá el siguiente esquema de directorios:
+
 ![](images/dir_geant4.png)
 
-1. **Descargar** el código fuente desde la página oficial de **Geant4 10.05.p01**
 
-   [Gnu or Linux tar format, compressed using gzip](http://geant4.web.cern.ch/support/download)
+
+1. Descargar el código fuente desde la página oficial de [Geant4](http://geant4.web.cern.ch/)
+
+   Decargar la última versión estable: [Geant4 10.05.p01](http://geant4.web.cern.ch/support/download)
 
 2. **Descargar** los 12 ***paquetes adicionales*** de la sección: *DATA FILES ( )*.
 
-   Son necesarios para ejecutar los ejemplos que trae Geant4.  Son en total 12 archivos: G4NDL4.5, G4EMLOW7.7, G4PhotonEvaporation5.3, etc., (Aproximadamente 2.2 GB) se puede omitir este paso si se posee una conexión a Internet muy estable en latencia además velocidad de descarga.
+   Son necesarios para ejecutar los ejemplos que trae Geant4.  Son en total 12 archivos: G4NDL4.5, G4EMLOW7.7, G4PhotonEvaporation5.3, etc., (Aproximadamente 2.1 GB) se puede omitir este paso si se posee una conexión a Internet muy estable en latencia además velocidad de descarga.
 
 3. **Descomprimir** el código fuente y renombrar la carpeta de la siguiente forma:
 
@@ -20,17 +24,26 @@
 
    Puedes cambiar libremente el nombre del directorio base, aquí: **SIMULAR**
 
-5. **Mover** la carpeta **g4_source** a la ruta de instalación: ***/home/USUARIO/SIMULAR/Geant4-10.05/***
+5. **Mover** la carpeta **g4_source** a la ruta de instalación: 
+
+   ```bash
+   /home/USUARIO/Documents/SIMULAR/Geant4-10.05/
+   ```
 
 6. **Descomprimir** los archivos adicionales dentro de una carpeta denominada: **data**
 
-7. **Mover** la carpeta **data** a la ruta de instalación: ***/home/USUARIO/SIMULAR/Geant4-10.05/***
+7. **Mover** la carpeta **data** a la ruta de instalación:
+
+   ```bash
+   /home/USUARIO/Documents/SIMULAR/Geant4-10.05/
+   ```
 
 8. Dentro de la ruta de instalación crear dos directorios adicionales:
 
-   **geant_build** y **geant_install**
+   * **geant_build**
+   * **geant_install**
 
-9. En este punto debemos tener el siguiente lo siguiente
+9. En este punto debemos tener el siguiente lo siguiente:
 
    ```bash
    $ ls
@@ -41,13 +54,13 @@
    data  g4_build  g4_install  g4_source  geant4.10.05.p01.tar.gz
    ```
 
-10. Configurar `cmake`. Utilizaremos el modo interfaz gráfica
+10. Configurar `cmake`. Utilizaremos el modo gráfico:
 
     ```bash
     $ cmake-gui
     ```
 
-    En la interfaz gráfica seleccionamos los siguiente:
+    En la interfaz seleccionar lo siguiente:
 
     * Source code  = /home/USUARIO/Documents/SIMULAR/Geant4/g4_source
 
@@ -59,9 +72,9 @@
 
       
 
-11. Activar las características de Geant4
+11. Activar características de Geant4 (según se requiera)
 
-    Recomiendo instalar las siguientes opciones, son útiles para cualquier situación en la que se esté trabajando, si embargo, los detalles se pueden ver en [http://geant4-userdoc.web.cern.ch](http://geant4-userdoc.web.cern.ch/geant4-userdoc/UsersGuides/InstallationGuide/html/installguide.html)
+    Recomiendo instalar las siguientes opciones, son útiles en la mayoría de situaciones, sin embargo, depende de la finalidad del usuario, los detalles se pueden ver en [aquí](http://geant4-userdoc.web.cern.ch/geant4-userdoc/UsersGuides/InstallationGuide/html/installguide.html)
 
     - [x] MAKE_INSTALL_PREFIX =  /home/USUARIO/Documents/SIMULAR/Geant4/g4_build
     - [x] GEANT4_BUILD_MULTITHREADED
@@ -106,11 +119,9 @@
     $ make install
     ```
 
-    
-
 17. Fijar al variables de entorno (temporal)
 
-    Esto método de fijar las variables de entorno si tiene que hacer cada vez que se cierre la terminal. Caso contrario, se tiene que fijar de forma persistente que es lo recomendado.
+    Esto método se tiene que hacer cada vez que se cierre la terminal. Caso contrario, se tiene que fijar las variables de forma persistente (recomendado).
 
     ```bash
     $ source /home/USUARIO/Documents/SIMULAR/Geant4-10.05/g4_install/bin/geant4.sh
@@ -147,7 +158,7 @@ El proceso es el siguiente:
 
 - Guardamos, salimos y presionar nuevamente `Crtl + H` para regresar todo a la normalidad.
 
-- Ahora podemos ejecutar *geant4* desde cualquier parte del ordenador en todo momento que lo necesitemos.
+- Ahora se puede ejecutar *geant4* desde cualquier parte del ordenador cuando se necesite.
 
 
 
@@ -162,13 +173,15 @@ El proceso es el siguiente:
 
 2. **Copiar un ejemplo** de Geant4 en el directorio de trabajo
 
-   Los ejemplos se encuentran en : /home/USUARIO/Documents/SIMULAR/geant4-10.5.1/g4_install/share/Geant4-10.5.1/examples/
+   Los ejemplos se encuentran en: 
 
-   
+   ```bash
+   /home/USUARIO/Documents/SIMULAR/geant4-10.5.1/g4_install/share/Geant4-10.5.1/examples/
+   ```
 
-3. En nuestro caso hemos copiado el ejemplo /Basic/B1
+3. En mi caso he copiado el ejemplo: **/Basic/B1**
 
-4. Dentro del ejemplo hacemos lo siguiente:
+4. Dentro del directorio del ejemplo hacemos lo siguiente:
 
    ```bash
    $ mkdir build
@@ -210,3 +223,10 @@ El proceso es el siguiente:
 ## Resultado
 
 ![](../src/simular_b1.png)
+
+
+
+# Recursos
+
+* [Página oficial Geant4](http://geant4.web.cern.ch/)
+* [Guía oficial de instalación](https://indico.cern.ch/event/679723/contributions/2792554/attachments/1559217/2453759/Geant4InstallationGuide.pdf)
