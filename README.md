@@ -10,14 +10,15 @@ En este repositorio se muestra el proceso detallado para realizar una instalaci�
 | ---------------------------------------------------------- | :--------------- |
 | Debian (stable)<br />Ubuntu (18.04)<br />Linux Mint (18.2) | Manjaro (18.0.4) |
 
-Esquema general de los directorios de instalación:
 
 ![](/src/dir_general.png)
 
 
-## Geant4.10.05.p01
 
-#### Preparación del sistema
+## Geant4.10.05.p01
+---
+
+### Preparación del sistema
 
 1. ACTUALIZAR la distribución de Linux a la versión más reciente:
 
@@ -49,7 +50,6 @@ Esquema general de los directorios de instalación:
    $ sudo apt install libssl-dev libpcre3-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl23 libgsl-dev
    ```
 
----
 
 ### Instalación para distribuciones: Debian/Ubuntu/Mint
 
@@ -63,6 +63,7 @@ Las instrucciónes para la instalación completa de Geant4 se muestro a continua
 
 * [Geant4 para Debian/Ubuntu/Mint](/Geant4/install_geant4.md)
 
+
 ### Instalación para distribuciones en Arch/Manjaro
 
 Estas distribuciones hacen uso de `pacman` para gestionar los paquetes:
@@ -74,9 +75,9 @@ $ sudo pacman -S paquete
 La instalación en distribuciones Arch es la misma que las basadas en Debían. La única diferencia consiste en buscar los paquetes en su versión Arch (generalmente ya traen muchos paquetes instalado), los demás comandos son exactamente iguales. Para realizar buscar los paquetes se recomienda utilizar el *gestor de software* propio de esas distribuciones `pamac` u `octopi` que hacen una gestion excelente.
 
 
-
-
+---
 ## ROOT 6.18.00
+---
 
 | Logo ROOT               | Imagen demo de ROOT   |
 | ----------------------- | --------------------- |
@@ -99,7 +100,7 @@ En general, una vez instalado Geant4, la instalación de ROOT es relativamente s
   * Desde el código fuente
   * Desde paquete pre-compilado
 
----
+***
 
 #### Instalación desde el código fuente
 
@@ -116,7 +117,7 @@ La instalación de ROOT desde el código fuente es la mejor opción.
 
 * [Instalar ROOT desde código fuente](/ROOT/install_ROOT.md)
 
----
+
 
 #### Instalación pre-compilada
 
@@ -131,7 +132,6 @@ La instalación pre-compilada consiste en una instalación rápida. El software 
 **Instrucciones para realizar esta instalación se muestran aquí:** 
 
 * [Instalar ROOT desde pre-compilado](/ROOT/binary_ROOT.md)
-
 
 
 ---
