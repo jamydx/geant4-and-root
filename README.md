@@ -1,3 +1,7 @@
+---
+typora-root-url: ./
+---
+
 
 ![](/Geant4/images/b2b_0000.png)
 
@@ -37,7 +41,7 @@ En este repositorio se muestra el proceso detallado para realizar una instalaci�
    **Librerías necesarias: Geant4 y ROOT:**
 
    ```bash
-   $ sudo apt install libxerces-c-dev mesa-utils mesa-utils-extra mesa-common-dev libfreetype6 libfreetype6-dev qt4-default libqt4-opengl libqt4-opengl-dev libxmu-dev qt5-default
+   $ sudo apt install libxerces-c-dev mesa-utils mesa-utils-extra mesa-common-dev libfreetype6 libfreetype6-dev libxmu-dev qt4-default libqt4-opengl libqt4-opengl-dev qt5-default libqt5opengl5 libqt5opengl5-dev
    ```
 
    ```bash
@@ -59,7 +63,7 @@ Estas distribuciones hacen uso de `apt` para gestionar los paquetes:
 $ sudo apt install paquete
 ```
 
-Las instrucciónes para la instalación completa de Geant4 se muestro a continuación
+Las instrucciones para la instalación completa de Geant4 se muestro a continuación
 
 * [Geant4 para Debian/Ubuntu/Mint](/Geant4/install_geant4.md)
 
@@ -72,14 +76,13 @@ Estas distribuciones hacen uso de `pacman` para gestionar los paquetes:
 $ sudo pacman -S paquete
 ```
 
-La instalación en distribuciones Arch es la misma que las basadas en Debían. La única diferencia consiste en buscar los paquetes en su versión Arch (generalmente ya traen muchos paquetes instalado), los demás comandos son exactamente iguales. Para realizar buscar los paquetes se recomienda utilizar el *gestor de software* propio de esas distribuciones `pamac` u `octopi` que hacen una gestion excelente.
-
+La instalación en distribuciones Arch es la misma que las basadas en Debían. La única diferencia consiste en buscar los paquetes en su versión Arch (generalmente ya traen muchos paquetes instalado), los demás comandos son exactamente iguales. Para realizar buscar los paquetes se recomienda utilizar el *gestor de software* propio de esas distribuciones `pamac` u `octopi` que hacen una gestión excelente.
 
 ---
 ## ROOT 6.18.00
 ---
 
-| Logo ROOT               | Imagen demo de ROOT   |
+| Logo ROOT               | Imagen .demo de ROOT  |
 | ----------------------- | --------------------- |
 | ![](/src/logo_root.png) | ![](/src/root-gh.png) |
 
@@ -89,22 +92,24 @@ En general, una vez instalado Geant4, la instalación de ROOT es relativamente s
 
 * Actualizar el sistema
 
-* Instalar depencias
+* Instalar dependencias
 
   ```bash
   $ sudo apt install git cmake cmake-qt-gui g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev libpng-dev libpng++-dev libjpeg-dev gfortran
   ```
 
-* Proceder a la instalación del software elgiendo una de las dos formas:
+* Proceder a la instalación del software eligiendo una de las dos formas:
 
-  * Desde el código fuente
-  * Desde paquete pre-compilado
+  * Desde el código fuente ([instrucciones](/ROOT/install_ROOT.md))
+  * Desde paquete pre-compilado ([instrucciones](/ROOT/binary_ROOT.md))
 
 ***
 
-#### Instalación desde el código fuente
+#### [Instalación desde el código fuente](/ROOT/install_ROOT.md) 
 
 La instalación de ROOT desde el código fuente es la mejor opción. 
+
+Instrucciones para realizar esta instalación se muestra a detalle 
 
 **Ventajas e inconvenientes de compilar:**
 
@@ -113,13 +118,9 @@ La instalación de ROOT desde el código fuente es la mejor opción.
 + Útil cuando se quiere optimizar el tiempo de cálculo de un ordenador modesto.
 + Es un proceso largo y algo tedioso.
 
-**Instrucciones para realizar esta instalación se muestra a detalle aquí:** 
-
-* [Instalar ROOT desde código fuente](/ROOT/install_ROOT.md)
 
 
-
-#### Instalación pre-compilada
+#### [Instalación pre-compilada](/ROOT/binary_ROOT.md)
 
 La instalación pre-compilada consiste en una instalación rápida. El software ha sido compilado en otro ordenador bajo ciertas condiciones (dependencias) que tienen que cumplirse en el ordenador de destino para que se ejecute.
 
@@ -129,9 +130,6 @@ La instalación pre-compilada consiste en una instalación rápida. El software 
 * Es la mejor opción para usuarios nóveles porque no requiere compilar desde el código fuente.
 * No aprovecha todos los recursos de nuestro ordenador. Solo se nota al realizar análisis de datos de gran complejidad.
 
-**Instrucciones para realizar esta instalación se muestran aquí:** 
-
-* [Instalar ROOT desde pre-compilado](/ROOT/binary_ROOT.md)
 
 
 ---

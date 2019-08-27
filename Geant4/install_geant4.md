@@ -10,7 +10,7 @@
 
 2. **Descargar** los 12 ***paquetes adicionales*** de la sección: *DATA FILES ( )*.
 
-   Son necesarios para ejecutar los ejemplos que trae Geant4.  Son en total 12 archivos: G4NDL4.5, G4EMLOW7.7, G4PhotonEvaporation5.3, etc., (Aproximadamente 2.2GB) se puede omitir este paso si se posee una conexion a internet muy estable en latencia además velocidad de descarga.
+   Son necesarios para ejecutar los ejemplos que trae Geant4.  Son en total 12 archivos: G4NDL4.5, G4EMLOW7.7, G4PhotonEvaporation5.3, etc., (Aproximadamente 2.2 GB) se puede omitir este paso si se posee una conexión a Internet muy estable en latencia además velocidad de descarga.
 
 3. **Descomprimir** el código fuente y renombrar la carpeta de la siguiente forma:
 
@@ -41,7 +41,7 @@
    data  g4_build  g4_install  g4_source  geant4.10.05.p01.tar.gz
    ```
 
-10. Configuar `cmake`. Utilizaremos el modo interfaz gráfica
+10. Configurar `cmake`. Utilizaremos el modo interfaz gráfica
 
     ```bash
     $ cmake-gui
@@ -76,7 +76,7 @@
 
 12. Clic en ***Configure*** dos veces si fuera necesario (no se debe ver marcadores rojos)
 
-13. Clic en ***Generate*** y cerrar cmake.
+13. Clic en ***Generate*** y cerrar `cmake`.
 
     | cmake                   | cmake + características |
     | ----------------------- | ----------------------- |
@@ -94,7 +94,7 @@
     $ make -j4
     ```
 
-    Aquí `j4` indica el número de núcleos que asignaremos a la tarea. A mayor cantidad de núcleos menor tiempo en realizar la tarea y viceversa. Depende de tu ordenador.
+    Aquí `j4` indica el número de núcleos que asignaremos a la tarea. A mayor cantidad de núcleos menor tiempo en realizar la tarea y viceversa. Depende de tu ordenador. Este proceso puede tomar 2 horas o más.
 
     ![](images/compile_g4.png)
 
@@ -175,7 +175,7 @@ El proceso es el siguiente:
    $ cd build
    ```
 
-5. Contruimos el paquete con `cmake`
+5. Construimos el paquete con `cmake`
 
    ```bash
    $ camke ../

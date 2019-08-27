@@ -29,18 +29,17 @@ Se requiere que el ordenador tenga instalado todos las dependencias.
    Librerías necesarias (sin esto no funciona)
 
    ```bash
-$ sudo apt install git cmake cmake-qt-gui g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev libpng-dev libpng++-dev libjpeg-dev gfortran
+	$ sudo apt install git cmake cmake-qt-gui g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev libpng-dev libpng++-dev libjpeg-dev gfortran
    ```
    
    Librerías importantes
 
    ```bash
-$ sudo apt install libssl-dev libpcre3-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl23 libgsl-dev
-   
+	$ sudo apt install libssl-dev libpcre3-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl23 libgsl-dev
    ```
    
    
-
+   
 3. Descargar los binarios compilados ***(Binary distributions)*** de desde la página oficial de [ROOT](https://root.cern.ch/downloading-root) . Seleccionar la versión que mejor se adecue a nuestra distribución de Linux.
 
    En el caso de las distribuciones listadas al inicio la versión que mejor se ajusta es:
