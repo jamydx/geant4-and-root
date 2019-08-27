@@ -1,9 +1,3 @@
----
-typora-root-url: ..
----
-
-
-
 # Instalación de ROOT 6.18
 
 Este proceso de instalación recomienda hacer uso del *gestor de archivos* para moverse entre los distintos directorios. Se recomienda realizar una instalación ordenada como se muestra en el esquema adjunto (todos los directorios son carpetas). En general, para instalar este software solo se necesita el código fuente y una carpeta ***build*** donde compilar.
@@ -12,7 +6,7 @@ Este proceso de instalación recomienda hacer uso del *gestor de archivos* para 
 
 
 
-![](/ROOT/images/dir_root.png)
+![](images/dir_root.png)
 
 ### Pasos a seguir:
 
@@ -35,32 +29,32 @@ Este proceso de instalación recomienda hacer uso del *gestor de archivos* para 
       Librerías críticas (sin esto no funciona)
 
       ```bash
-      sudo apt install git cmake cmake-qt-gui g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev libpng-dev libpng++-dev libjpeg-dev
+      sudo apt install git cmake cmake-qt-gui g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev libpng-dev libpng++-dev libjpeg-dev gfortran
       ```
 
-      Librerías importantes
+      Librerías importantes (opcionales)
 
       ```bash
-      sudo apt install gfortran libssl-dev libpcre3-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl23 libgsl-dev
+      sudo apt install libssl-dev libpcre3-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl23 libgsl-dev
       ```
       
 ---
-      
+
 3. Descargar los binarios desde la página oficial de [ROOT](https://root.cern.ch/downloading-root) . Seleccionar la última versión estable (PRO). 
 
       [root_v6.18.00.source.tar.gz](https://root.cern/download/root_v6.18.00.source.tar.gz), (158 MB)
 
-4. Mover el archivo descargado a nuestro directorio de instalacion ***root-6.18***:
+4. Mover el archivo descargado a nuestro directorio de instalación ***root-6.18***:
 
 5. Descomprimir el archivo comprimido (.tar.gz). 
 
    Revisar que se haya creado la carpeta: ***root-6.18.00***
 
-6. Crear el directorio *root-build*.
+6. Crear el directorio ***root-build***.
 
    Comprobar que todo este de acuerdo al esquema adjunto.
 
-7. Abrir una terminal y cambiar al directorio actual: *root-build*
+7. Abrir una terminal y cambiar al directorio actual: ***root-build***
 
    ```bash
    $ cd /home/USUARIO/Documents/ENTORNO/root-6.18/root-build/
@@ -74,7 +68,7 @@ Este proceso de instalación recomienda hacer uso del *gestor de archivos* para 
 
 9. Compilar root
 
-   Aquí `j4` significa que se compilará usando 4 nucleos del procesador,  depende de la potencia de tu ordenador.  Mientras más núcleos físicos poseas menos tiempo tomará el proceso y viceversa. 
+   Aquí `j4` significa que se compilará usando 4 núcleos del procesador,  depende de la potencia de tu ordenador.  Mientras más núcleos físicos poseas menos tiempo tomará el proceso y viceversa. 
 
    ```bash
    $ make -j4
@@ -82,15 +76,15 @@ Este proceso de instalación recomienda hacer uso del *gestor de archivos* para 
 
    En mi caso, usando usando 4 núcleos el proceso tardó: 1h y 30 min.
 
-   ![](/ROOT/images/process_install.jpg)
+   ![](images/process_install.jpg)
 
-10. Fijar las varibales de entorno
+10. Fijar las variables de entorno
 
    ```bash
    $ source /bin/thisroot.sh
    ```
 
-11. Ya tenemos instalado ROOT. Ejectutar:
+11. Ya tenemos instalado ROOT. Ejecutar:
 
    ```bash
    $ root
@@ -140,7 +134,7 @@ Built for linuxx8664gcc on Aug 25 2019.
 From tag, 25 June 2019
 ```
 
-​    ![](/ROOT/images/root-final.png)
+​    ![](images/root-final.png)
 
 
 

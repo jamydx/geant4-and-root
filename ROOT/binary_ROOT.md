@@ -1,7 +1,3 @@
----
-typora-root-url: ..
----
-
 # Instalación pre-compilada de ROOT 6.18
 
 Este proceso de instalación se recomienda para usuarios noveles o siempre que no se desee hacer un uso extendido de ROOT. Para otros fines es mejor utilizar el proceso de [compilación](/ROOT/install_ROOT.md).
@@ -12,7 +8,7 @@ Se requiere que el ordenador tenga instalado todos las dependencias.
 
 
 
-![](/ROOT/images/dir_binary.png)
+![](images/dir_binary.png)
 
 ### Pasos a seguir:
 
@@ -28,23 +24,21 @@ Se requiere que el ordenador tenga instalado todos las dependencias.
 
 2. INSTALAR DEPENDENCIAS
 
-   Los paquetes han sido revisados con la base de paquetes de [Ubuntu](https://packages.ubuntu.com/).
+   Los paquetes han sido revisados con la base de paquetes de [Ubuntu](https://packages.ubuntu.com/). La lista detallada se puede revisar aquí [ROOT](https://root.cern.ch/build-prerequisites)
 
-   La lista detallada se puede revisar aquí [ROOT](https://root.cern.ch/build-prerequisites)
-
-   Librerías críticas (sin esto no funciona)
+   Librerías necesarias (sin esto no funciona)
 
    ```bash
-   sudo apt install git cmake cmake-qt-gui g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev libpng-dev libpng++-dev libjpeg-dev
+$ sudo apt install git cmake cmake-qt-gui g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev libpng-dev libpng++-dev libjpeg-dev gfortran
    ```
-
+   
    Librerías importantes
 
    ```bash
-   sudo apt install gfortran libssl-dev libpcre3-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl23 libgsl-dev
+$ sudo apt install libssl-dev libpcre3-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl23 libgsl-dev
    
    ```
-
+   
    
 
 3. Descargar los binarios compilados ***(Binary distributions)*** de desde la página oficial de [ROOT](https://root.cern.ch/downloading-root) . Seleccionar la versión que mejor se adecue a nuestra distribución de Linux.
@@ -126,7 +120,7 @@ Build for linuxx8664gcc on Jun 25 2019, 09:22:23
 From tags/v6-18-00@v6-18-00
 ```
 
-![](/ROOT/images/binary_root.png)
+![](images/binary_root.png)
 
 
 

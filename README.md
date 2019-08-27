@@ -2,18 +2,18 @@
 typora-root-url: ./
 ---
 
-![](/src/b2b_0000.png)
+![](/Geant4/images/b2b_0000.png)
 
 # Instalación completa de Geant4 y ROOT
 
-En este repositorio se muestra el proceso detallado para realizar una instalación completa e integrada entre Geant4 y ROOT. Se dirige a usuarios noveles y medios. El proceso se realiza exclusivamente para  ***Linux Mint*** . Sin embargo es extrapolable a la siguiente lista de distribuciones:
+En este repositorio se muestra el proceso detallado para realizar una instalación completa e integrada entre Geant4 y ROOT. Se dirige a usuarios noveles y medios. El proceso sirve para la siguiente lista de distribuciones:
 
 
 | Apt (base)                                                 | Pacman (base)    |
 | ---------------------------------------------------------- | :--------------- |
 | Debian (stable)<br />Ubuntu (18.04)<br />Linux Mint (18.2) | Manjaro (18.0.4) |
 
-Esquema general de directorios de instalación
+Esquema general de los directorios de instalación:
 
 ![](/src/dir_general.png)
 
@@ -36,45 +36,72 @@ Esquema general de directorios de instalación
 
    Los paquetes han sido revisados con la base de paquetes de [Ubuntu](https://packages.ubuntu.com/).
 
-   Librerías necesarias: Geant4 y ROOT:
+   **Librerías necesarias: Geant4 y ROOT:**
 
    ```bash
-   sudo apt install libxerces-c-dev qt5-default mesa-utils mesa-utils-extra mesa-common-dev \libfreetype6 libfreetype6-dev libqt4-opengl libqt4-opengl-dev libxmu-dev
+   $ sudo apt install libxerces-c-dev mesa-utils mesa-utils-extra mesa-common-dev libfreetype6 libfreetype6-dev qt4-default libqt4-opengl libqt4-opengl-dev libxmu-dev qt5-default
    ```
 
    ```bash
-   sudo apt install git cmake cmake-qt-gui g++ gcc binutils libx11-dev libxpm-dev libxft-dev \libxext-dev libpng-dev libpng++-dev libjpeg-dev
+   $ sudo apt install git cmake cmake-qt-gui g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev libpng-dev libpng++-dev libjpeg-dev gfortran
    ```
 
    Librerías importantes (opcionales):
 
    ```bash
-   sudo apt install gfortran libssl-dev libpcre3-dev libftgl-dev libmysqlclient-dev \libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl23 libgsl-dev
+   $ sudo apt install libssl-dev libpcre3-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl23 libgsl-dev
    ```
 
 ---
 
 ### Instalación para distribuciones: Debian/Ubuntu/Mint
 
-Esta distribución hace uso de los paquetes sudo apt install.
+Estas distribuciones hacen uso de `apt` para gestionar los paquetes: 
 
-[Geant4 para Debian/Ubuntu/Mint](/Geant4/install_geant4.md)
+```bash
+$ sudo apt install paquete
+```
+
+Las instrucciónes para la instalación completa de Geant4 se muestro a continuación
+
+* [Geant4 para Debian/Ubuntu/Mint](/Geant4/install_geant4.md)
 
 ### Instalación para distribuciones en Arch/Manjaro
 
-La instalación para distribuciones Arch es la misma que las basadas en Debían. Se puede buscar los paquetes directamente en el gestor de software que hace un uso muy efectivo de los paquetes.
+Estas distribuciones hacen uso de `pacman` para gestionar los paquetes:
+
+```bash
+$ sudo pacman -S paquete
+```
+
+La instalación en distribuciones Arch es la misma que las basadas en Debían. La única diferencia consiste en buscar los paquetes en su versión Arch (generalmente ya traen muchos paquetes instalado), los demás comandos son exactamente iguales. Para realizar buscar los paquetes se recomienda utilizar el *gestor de software* propio de esas distribuciones `pamac` u `octopi` que hacen una gestion excelente.
 
 
 
 ## ROOT 6.18.00
 
-|                         |                       |
+| Logo ROOT               | Imagen demo de ROOT   |
 | ----------------------- | --------------------- |
 | ![](/src/logo_root.png) | ![](/src/root-gh.png) |
 
 #### Preparación del sistema
 
-En general, una vez instalado Geant4, la instalación de ROOT es relativamente sencilla.
+En general, una vez instalado Geant4, la instalación de ROOT es relativamente sencilla. En caso de solo requerir ROOT no hay problema, el proceso de resume a continuación:
+
+* Actualizar el sistema
+
+* Instalar depencias
+
+  ```bash
+  $ sudo apt install git cmake cmake-qt-gui g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev libpng-dev libpng++-dev libjpeg-dev gfortran
+  ```
+
+* Proceder a la instalación del software elgiendo una de las dos formas:
+
+  * Desde el código fuente
+  * Desde paquete pre-compilado
+
+***
 
 #### Instalación desde el código fuente
 
@@ -89,7 +116,7 @@ La instalación de ROOT desde el código fuente es la mejor opción.
 
 **Instrucciones para realizar esta instalación se muestra a detalle aquí:** 
 
-[Instalar ROOT desde código fuente](/ROOT/install_ROOT.md)
+* [Instalar ROOT desde código fuente](/ROOT/install_ROOT.md)
 
 ---
 
@@ -105,7 +132,7 @@ La instalación pre-compilada consiste en una instalación rápida. El software 
 
 **Instrucciones para realizar esta instalación se muestran aquí:** 
 
-[Instalar ROOT desde pre-compilado](/ROOT/binary_ROOT.md)
+* [Instalar ROOT desde pre-compilado](/ROOT/binary_ROOT.md)
 
 
 
